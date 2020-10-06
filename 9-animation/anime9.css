@@ -1,0 +1,37 @@
+@keyframes moveTest {
+    0% {top:100px;}
+    20% {top:80px;}
+    40% {top:60px;}
+    60% {top:40px;}
+    80% {top:20px;}
+    100% {top:0px;}
+}
+.all > * {
+    animation-iteration-count: 5;
+}
+
+.sol-1 {
+    position: relative;
+    animation-name: moveTest;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+}
+
+.sol-2 {
+    position: relative;
+    animation-name: moveTest;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-direction: normal;
+
+}
+
+.sol-3 {
+    position: relative;
+    animation-name: moveTest;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-direction: reverse;
+}
+

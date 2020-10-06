@@ -1,0 +1,27 @@
+@keyframes moveTest {
+    0% {top:100px;}
+    20% {top:80px;}
+    40% {top:60px;}
+    60% {top:40px;}
+    80% {top:20px;}
+    100% {top:0px;}
+}
+
+
+.sol-1 {
+    animation: moveTest 2s 1s 5 3s alternate;
+    position: relative;
+}
+
+.sol-2 {
+    animation: moveTest 2s 1s infinite 3s normal;
+    position: relative;
+}
+
+.sol-3 {
+    position: relative;
+    animation: moveTest 8s 2s 5 1s reverse;
+
+}
+
+

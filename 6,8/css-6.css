@@ -1,0 +1,59 @@
+body { 
+    font-size: 1.5rem;
+}
+.root {
+    text-align: center;
+}
+.topic {
+    margin: 40px 0px;
+    background-color: pink;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-self: center;
+}
+@keyframes card-move {
+    0% { top: 0px; display:hide}
+    50% {top: 30px; color: red;border: 1px solid aqua}
+    100% {top:100px; background-color: black;}
+}
+
+.column-sub {
+    text-align: center;
+    height: 100px;
+    margin: 20px;
+    background-color: gray;
+    position: relative;
+    animation: card-move 5s infinite;
+}
+.pic {
+    width: 80%;
+}
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .column {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 0.5rem;
+    }
+    .column {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+

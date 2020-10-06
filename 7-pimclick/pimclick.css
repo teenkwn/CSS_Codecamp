@@ -1,0 +1,340 @@
+body {
+    font-family: 'Radley', serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    font-size: 10px;
+    /* padding: 30px; */
+}
+.all {
+    width: 100%;
+    height: 100%;
+}
+.all > * {
+    padding: 0% 10% ;
+}
+.contact {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-image: url("img/pimclick-bg.png");
+    background-size: 100% auto;
+    background-attachment: center;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+.logo-1 {
+    position: fixed;
+    left: 30px;
+    color: #fc5424;
+    font-weight: bold;
+    font-size: 3.5rem;
+    z-index: 10;
+}
+.logo-2 {
+    position: fixed;
+    left: -45px;
+    bottom: 200px;
+    transform: rotate(-90deg);
+    color: #fc5424;
+    font-weight: bold;
+    font-size: 3rem;
+    z-index: 10;
+}
+.chatbot {
+    position: fixed;
+    font-size: 1rem;
+    color: white;
+    background-color: #fc5424;
+    padding: 5px;
+    border-radius: 3px;
+    bottom: 3px;
+    right: 20px;
+    z-index:10;
+}
+.nav-about {
+    right: 40px;
+    width: 40px;
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    background-color: #fc5424;
+    z-index: 10;
+}
+.nav-about::before {
+    content:'';
+    background-color: white;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    top:30px;
+    right: 5px;
+} 
+.nav-about::after {
+    position: absolute;
+    content: "ABOUT"; 
+    top: 40px;
+    right: 4px;
+    font-size: .6rem;
+}
+
+.contact-detail {
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    height: 550px;
+    font-size: 1rem;
+    box-shadow: 0px 10px 10px 0px gray;
+}
+.contact-detail-form {
+    display: flex;
+    width: 100%;
+}
+.contact-detail-form-sub {
+    text-align: left;
+    width: 50%;
+    margin: 20px 20px 0px 20px;
+}
+.contact-detail-inside {
+    margin: 30px;
+    text-align: left;
+    /* box-shadow: */
+}
+.contact-detail-inside-topic {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.contact-detail-submit {
+    border-radius: 20px;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
+}
+.contact-detail-form-input {
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+.sub-tail {
+    width: 96%;
+}
+.description {
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+    margin-top: 150px;
+    line-height: 1.8;
+
+}
+.video {
+    margin-top: 50px;
+    width: 80%;
+    height: 400px;
+}
+.pimclick-key {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+}
+.key {
+    width: 100%;
+    font-size: 1.25rem;
+    color: gray;
+}
+.key-topic {
+    color: red;
+    font-size: 4rem;
+}
+.key-1 {
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+.key-2 {
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+.key-3 {
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+.key-4 {
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+ul {
+    padding-inline-start: 0px;
+}
+.key-list {
+    list-style: none;
+}
+.key-pic {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px; 
+}
+.end-of-key {
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+.end-of-key-topic {
+    margin-bottom: 10px;
+    color: red;
+    font-size: 2rem;
+}
+.sponsor {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+    justify-content: space-evenly;
+}
+.sponsor > * {
+    width: 100%;
+}
+.prudential {
+    position: relative;
+    padding: 0px;
+}
+.computer {
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.computer-pic {
+    width: 60%;
+}
+.inside-com {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 50px;
+    width: 45%;
+}
+.prudential-back {
+    position: absolute;
+    z-index: -1;
+    bottom: 100px;
+    background-color: red;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.contact-us {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.drop-here {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.drop-here-logo {
+    margin: 40px auto;
+    padding: 50px;
+    font-size: 4rem;
+    color: gray;
+}
+.drop-here-box {
+    border: 1px solid gray;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 60px;
+    padding: 11px 30px;
+}
+.pimclick-contact {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0px 40px 40px;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+.pimclick-list {
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+.each {
+    margin-left: 50px;
+}
+
+@media only screen and (max-width:750px) {
+    .contact-detail {
+        top: 30%;
+    }
+    .pimclick-key {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .pimclick-contact {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin: 40px 0px 40px 40px;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    .each {
+        margin-left: 0px;
+    }
+    .logo-2 {
+        display: none;
+    }
+    .nav-about {
+        right: 15px;
+        width: 40px;
+        position: fixed;
+        top: 7px;
+        height: 2px;
+        background-color: #fc5424;
+        z-index: 10;
+    } 
+
+    .nav-about::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 40px;
+        right: 0px;
+        height: 2px;
+        top: 5px;
+        z-index: 10;
+        background-color: #fc5424;
+    } 
+    
+    .nav-about::after {
+        position: absolute;
+        content: ''; 
+        right: 0px;
+        display: block;
+        width: 40px;
+        height: 2px;
+        top: 10px;
+        z-index: 10;
+        background-color: #fc5424;
+        
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .contact-detail-form {
+        flex-direction: column;
+    }
+    .contact-detail-form-sub {
+        width: 90%;
+    }
+}
